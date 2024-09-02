@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Business Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Business Form</h2>
+      <form action="/register" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="businessName">Business Name</label>
+          <input
+            type="text"
+            id="businessName"
+            name="businessName"
+            placeholder="Enter your business name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="business-category">Business Category</label>
+          <select id="business-category" name="business-category" required>
+            <option value="">Select Category</option>
+            <option value="retail">Retail</option>
+            <option value="food">Food and Beverage</option>
+            <option value="service">Service</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="logo">Upload Business Logo</label>
+          <input type="file" id="logo" name="logo" accept="image/*" required />
+        </div>
+
+        <div class="form-group">
+          <label for="banner">Upload Business Banner Image</label>
+          <input type="file" id="banner" name="banner" accept="image/*" />
+        </div>
+
+        <div class="form-group">
+          <label for="csv">Upload CSV File</label>
+          <input type="file" id="csv" name="csv" accept=".csv" />
+        </div>
+
+        <div class="form-group">
+          <label for="business-address">Business Address</label>
+          <textarea
+            id="business-address"
+            name="business-address"
+            placeholder="Enter your business address"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="business-description">Business Description</label>
+          <textarea
+            id="business-description"
+            name="business-description"
+            placeholder="Enter a description about your business"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

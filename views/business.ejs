@@ -1,0 +1,19 @@
+    <%- include('./templates/header',{title:"Businesses"}) %>
+    </nav>
+    <section id="heading">Discover the Businesses</section>
+    <section
+      id="category"
+      style="
+    display: <%= (category == 'all') ? 'none' : 'block' %>;
+  "
+    >
+      Category: Food
+    </section>
+    <main class="business-cards">
+      <% businessList.forEach(business=>{ %>
+      <div class="card-item"><%- include('./templates/card',{business:business}) %></div>
+      <% }); %>
+    </main>
+    <% console.log(businessList); %>
+  </body>
+</html>

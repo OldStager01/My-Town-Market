@@ -1,0 +1,84 @@
+<%- include('./templates/header',{title:"Businesses"}) %>
+<main>
+  <section id="business-header">
+    <p id="business-name-header"><%= businessName %></p>
+    <img src="<%= businessImage %>" alt="business_icon" />
+    <div id="business-header-details">
+      <p>Category: Food</p>
+      <p>Ratings: 4.5/5</p>
+    </div>
+  </section>
+  <section id="business-body">
+    <!--*Description  -->
+    <div class="body-section" id="description">
+      <h2 class="business-body-heading">
+        Description
+        <div class="seperator-line"></div>
+      </h2>
+      <p><%= description %></p>
+    </div>
+
+    <!--*Products/Services  -->
+    <div class="body-section" id="products">
+      <h2 class="business-body-heading">
+        Products/Services
+        <div class="seperator-line"></div>
+      </h2>
+      <div id="product-container">
+        <% products.forEach(product=>{ %>
+        <div class="product">
+          <img src="<%- product.img %>" alt="" />
+          <div class="product-details">
+            <h2><%- product.name %></h2>
+            <p><%- product.details %></p>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+
+    <!--*Images  -->
+    <div class="body-section" id="images">
+      <h2 class="business-body-heading">
+        Photos
+        <div class="seperator-line"></div>
+      </h2>
+      <div class="image-container">
+        <% images.forEach(image=>{ %>
+        <img src="<%= image %>" alt="image" srcset="" /> <% }); %>
+      </div>
+    </div>
+
+    <!--*Contact  -->
+    <div class="body-section" id="contact">
+      <h2 class="business-body-heading">
+        Contact
+        <div class="seperator-line"></div>
+      </h2>
+      <div id="contact-container">
+        <div class="contact-item" id="contact-owner">
+          <h1 class="contact-heading">Proprietor / Owner:</h1>
+          <p><%= owner %></p>
+        </div>
+        <div class="contact-item" id="contact-address">
+          <h1 class="contact-heading">Address:</h1>
+          <p><%= address %></p>
+        </div>
+        <div class="contact-item" id="contact-phone">
+          <h1 class="contact-heading">Phone:</h1>
+          <p><%= phone %></p>
+        </div>
+        <div class="contact-item" id="contact-email">
+          <h1 class="contact-heading">Email:</h1>
+          <p><%= email %></p>
+        </div>
+        <div class="contact-item" id="contact-website">
+          <h1 class="contact-heading">Website:</h1>
+          <p>
+            <a href="<%= website %>"><%= website %></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

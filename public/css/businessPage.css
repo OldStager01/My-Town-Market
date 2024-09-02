@@ -1,0 +1,121 @@
+main {
+  margin-top: 30px;
+  padding: 20px;
+}
+#business-header {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#business-header img {
+  width: 350px;
+  border-radius: 15px;
+}
+#business-name-header {
+  margin: 20px 30px 30px;
+  font-size: 3.5em;
+  font-weight: 600;
+}
+#business-header-details {
+  text-align: center;
+  margin: 10px;
+}
+#business-header-details p {
+  font-size: large;
+  margin: 10px 0px;
+  letter-spacing: 1px;
+}
+.body-section {
+  margin: 40px auto;
+  width: 80%;
+}
+.business-body-heading {
+  width: fit-content;
+  font-size: 1.6em;
+  color: #bfa048;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.seperator-line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0px 15px;
+}
+#description p {
+  font-size: large;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-container img {
+  width: 29%;
+  margin: 1%;
+  border-radius: 10px;
+}
+#contact-container {
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+.contact-item {
+  margin: 10px 0px;
+  display: flex;
+  margin-left: 10px;
+  align-items: baseline;
+}
+
+.contact-heading {
+  font-size: larger;
+  width: fit-content;
+  display: inline;
+  font-weight: 600;
+}
+
+.contact-item p {
+  margin-left: 10px;
+  font-size: large;
+  line-height: 1.25;
+  width: 80%;
+}
+
+#product-container {
+  margin: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product {
+  display: flex;
+  width: 25%;
+  padding: 5px;
+  border: 1px solid rgba(112, 128, 144, 0.451);
+  border-radius: 5px;
+  margin: 10px;
+}
+.product img {
+  width: 40%;
+  border-radius: 5px;
+}
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 10px 15px;
+}
+.product-details h2 {
+  font-size: larger;
+  margin-bottom: 5px;
+}
+.product-details p {
+  font-size: 0.9em;
+  color: rgb(81, 84, 87);
+  text-align: center;
+}

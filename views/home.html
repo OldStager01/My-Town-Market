@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div id="logo-container">
+          <img src="./images/logo.png" id="logo" />
+          <div id="logo-text">My Town Market</div>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li class="nav-links-items"><a href="/">Home</a></li>
+            <li class="nav-links-items">
+              <a href="/business?category=food">Food</a>
+            </li>
+            <li class="nav-links-items">
+              <a href="/business?category=skincare">Skin-Care</a>
+            </li>
+            <li class="nav-links-items">
+              <a href="/business?category=tbd">TBD</a>
+            </li>
+            <li class="nav-links-items"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h1 id="page-heading">SHOP LOCAL, DISCOVER MORE</h1>
+        <p>Your one-stop hub for amazing local businesses</p>
+        <div id="categories-container">
+          <p id="category-heading">CHOOSE CATEGORY</p>
+          <div class="categories">
+            <div class="category">
+              <img src="./images/food_icon.jpg" alt="food_icon" />
+              <button class="hero-button" onclick="submitQuery('food')">
+                Food
+              </button>
+            </div>
+            <div class="category">
+              <img src="./images/skincare_icon.jpg" alt="food_icon" />
+              <button class="hero-button" onclick="submitQuery('skincare')">
+                Skin-Care
+              </button>
+            </div>
+            <div class="category">
+              <img src="./images/tbd_icon.png" alt="food_icon" />
+              <button class="hero-button" onclick="submitQuery('tbd')">
+                TBD
+              </button>
+            </div>
+          </div>
+          <button class="hero-button" onclick="submitQuery()">View All</button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

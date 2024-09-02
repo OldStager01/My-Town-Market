@@ -1,0 +1,26 @@
+<div class="card">
+  <img src="./images/food_icon.jpg" id="card-image" alt="food_Image" />
+  <div class="card-text">
+    <h1 id="card-heading"><%= business.businessName %></h1>
+    <div class="card-body">
+      <p id="card-address" class="card-body-item">
+        <span class="card-body-heading">Address: </span
+        ><span class="card-body-text"> <%= business.address %></span>
+      </p>
+      <p id="card-item-category" class="card-body-item">
+        <span class="card-body-heading">Category: </span
+        ><span class="card-body-text"> <%= business.category %></span>
+      </p>
+      <p id="card-rating" class="card-body-item">
+        <span class="card-body-heading">Rating: </span
+        ><span class="card-body-text"><%= business.rating %>/5</span>
+      </p>
+    </div>
+    <button
+      class="hero-button"
+      onclick="gotoBusiness('<%= business._id.toString() %>')"
+    >
+      View Business
+    </button>
+  </div>
+</div>
