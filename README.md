@@ -16,13 +16,13 @@ To get started with My Town Market, follow these steps:
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/my-town-market.git
+    git clone https://github.com/OldStager01/My-Town-Market.git
     ```
 
 2. **Navigate to the Project Directory**
 
     ```bash
-    cd my-town-market
+    cd My-Town-Market
     ```
 
 3. **Install Dependencies**
