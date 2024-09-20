@@ -9,8 +9,7 @@ require("dotenv").config();
 //Importing Routers
 const homeRouter = require("./routes/homeRouter");
 
-const mongoDBString =
-  "mongodb+srv://tanmaytambat01:ZVcHrWO3g1KSN22e@practicedb.varipgo.mongodb.net/?retryWrites=true&w=majority&appName=PracticeDB";
+const mongoDBString = process.env.MONGO_URI;
 //Importing Controllers
 const { cloudinary, handleFileUploads } = require("./utils/upload2");
 
