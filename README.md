@@ -1,5 +1,5 @@
 # My Town Market
-
+From MIBCS
 **My Town Market** is a website designed to support local businesses by listing their products and services. Built with Node.js, Express, and MongoDB, the platform helps businesses gain visibility and connect with the community.
 
 ## Features
